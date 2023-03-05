@@ -21,15 +21,14 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
   
-  
-  .button-selected:hover,
-  .button-selected:focus {
-    background-color: var(--curiousblue-color);
+  .button__icon {
+    margin-left: 10px;
+    fill: var(--primary-white-color);
   }
   
-  .form > .button:hover,
-  .form > .button:focus,
-  .modal-form__button:hover,
-  .modal-form__button:focus {
+  .button--curiousblue-color:hover,
+  .button--curiousblue-color:focus {
     background-color: var(--curiousblue-color);
   }
+
+  

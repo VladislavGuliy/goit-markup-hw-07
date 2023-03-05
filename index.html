@@ -16,7 +16,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
   </head>
   <body class="page">
     <!-- Шапка -->
@@ -68,7 +68,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="button hero__button button-selected" data-modal-open>
+          <button type="button" class="button hero__button button--curiousblue-color" data-modal-open>
             Замовити послугу
           </button>
         </div>
@@ -166,7 +166,7 @@
                 </label>
               </div>
 
-              <button class="button modal-form__button" type="submit">Відправити</button>
+              <button class="button modal-form__button button--curiousblue-color" type="submit">Відправити</button>
             </form>
           </div>
         </div>
@@ -518,25 +518,25 @@
       <div class="container container--footer-flex">
         <div>
           <a href="./index.html" class="logo footer__logo"
-            >Web<span class="logo-item logo__item--color-white">Studio</span></a
+            >Web<span class="logo__item logo__item--color-white">Studio</span></a
           >
 
           <address class="address">
             м. Київ, пр-т Лесі Українки, 26
-            <ul class="address-contact list">
-              <li class="item">
-                <a href="mailto:info@devstudio.com" class="link"
+            <ul class="address__contact list">
+              <li class="address__contact-item">
+                <a href="mailto:info@devstudio.com" class="address__contact-link link"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="item">
-                <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+              <li class="address__contact-item">
+                <a href="tel:+380961111111" class="address__contact-link link">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-socials">
-          <b class="text">приєднуйтесь</b>
+        <div class="footer__social-media">
+          <b class="footer__text">приєднуйтесь</b>
           <ul class="socials list">
             <li class="socials__item">
               <a href="" class="socials__link">
@@ -567,20 +567,21 @@
               </a>
             </li>
           </ul>
+          
         </div>
-        <div class="footer-distribution">
-          <b class="text">Підпишіться на розсилку</b>
+        <div class="footer__mailing">
+          <b class="footer__text">Підпишіться на розсилку</b>
           <form class="form">
             <input
-              class="form-input"
+              class="form__input"
               type="email"
               name="mail"
               autocomplete="off"
               placeholder="E-mail"
             />
-            <button class="button" type="submit">
+            <button class="button form__button button--curiousblue-color" type="submit">
               Підписатися
-              <svg class="button-icon" width="24" height="24">
+              <svg class="button__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
