@@ -2,8 +2,16 @@
     padding-bottom: 94px;
     padding-top: 94px;
 
+    &--indent {
+        padding-top: 0;
+      }
 
-  &__title {
+    &--team-bg {
+    background-color: var(--third-background-color);
+    }
+}
+
+.section__title {
     margin-top: 0;
     margin-bottom: 50px;
   
@@ -13,13 +21,4 @@
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-  }
-
-  &--indent {
-        padding-top: 0;
-  }
-
-  &--team-bg {
-    background-color: var(--third-background-color);
-  }
 }

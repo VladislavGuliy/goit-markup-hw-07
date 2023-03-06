@@ -3,13 +3,22 @@
     min-width: 231px;
   
     font-style: inherit;
-  }
-  .address__contact {
+}
+
+.address__contact {
+    @extend %list;
     margin-top: 9px;
-  }
-  .address__contact-item:first-child {
-    margin-bottom: 9px;
-  }
-  .address__contact-link {
+}
+
+.address__contact-item {
+
+    &:first-child {
+      margin-bottom: 9px;
+    }
+}
+
+.address__contact-link {
+    @extend %link;
+
     color: var(--transparent-white-color);
-  }
+}

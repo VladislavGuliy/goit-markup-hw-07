@@ -4,13 +4,12 @@
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-  }
-.container--header-flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-.container--footer-flex {
-    display: flex;
-    align-items: baseline;
-  }
+
+
+    &--header-flex {
+        @include centred-flex($content: space-between);
+      }
+    &--footer-flex {
+        @include centred-flex($align: baseline);
+      }
+}

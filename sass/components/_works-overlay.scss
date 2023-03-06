@@ -11,8 +11,13 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
     opacity: 1;
-  }
-  .works-overlay__wrapper-text {
+
+    .works-link:hover &,
+    .works-link:focus & {
+      transform: translateY(0);
+    }
+}
+.works-overlay__wrapper-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -20,14 +25,12 @@
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .works-link:hover .works-overlay__wrapper-text,
-.works-link:focus .works-overlay__wrapper-text {
-  opacity: 1;
-}
-.works-link:hover .works-overlay,
-.works-link:focus .works-overlay {
-  transform: translateY(0);
+
+
+    .works-link:hover &,
+    .works-link:focus & {
+      opacity: 1;
+    }
 }
 
 .works-overlay__text {

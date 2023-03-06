@@ -1,5 +1,4 @@
-
-  .modal {
+.modal {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -14,9 +13,13 @@
   
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+
+    .backdrop--is-hidden & {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+}
   
-  .modal__button {
+.modal__button {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -32,15 +35,16 @@
     margin: 0;
     padding: 0;
     box-shadow: none;
-  }
-  .modal__icon-closing {
-    fill: var(--black-color);
+}
+.modal__icon-closing {
+    @include color-icon(var(--black-color));
   
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .modal__button:hover .modal__icon-closing,
-  .modal__button:focus .modal__icon-closing {
-    fill: var(--accent-color);
-  }
+
+    .modal__button:hover &,
+    .modal__button:focus & {
+      @include color-icon(var(--accent-color)) ;
+    }
+}
   
   

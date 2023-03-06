@@ -1,12 +1,14 @@
 .profile {
     display: flex;
+    @extend %list;
   }
   .profile__item {
     position: relative;
     width: calc((100% - 60px) / 3);
-  }
-  .profile__item:not(:last-child) {
-    margin-right: 30px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
   .profile__background-text {
     position: absolute;

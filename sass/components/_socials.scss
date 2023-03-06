@@ -1,18 +1,18 @@
 .socials {
+    @include centred-flex();
+    @extend %list;
     line-height: 0;
-    display: flex;
-    justify-content: center;
-  }
-  .socials__item {
+}
+.socials__item {
     margin-right: 10px;
-  }
-  .socials__item:last-child {
-    margin-right: 0;
-  }
-  .socials__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+    &:last-child {
+      margin-right: 0;
+    }
+}
+.socials__link {
+    @include centred-flex();
+
     width: 44px;
     height: 44px;
     border-radius: 50px;
@@ -22,25 +22,28 @@
     cursor: pointer;
   
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .socials__link--color-team {
-    background-color: var(--primary-white-color);
-    color: var(--bombay-color);
+
+    &--color-team {
+      background-color: var(--primary-white-color);
+      color: var(--bombay-color);
+    
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+
+    &--color-team:hover,
+    &--color-team:focus {
+      background-color: var(--accent-color);
+      color: var(--primary-white-color);
+    }
+}
   
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .socials__link:hover,
-  .socials__link:focus {
-    background-color: var(--accent-color);
-  }
-  
-  .socials__link--color-team:hover,
-  .socials__link--color-team:focus {
-    background-color: var(--accent-color);
-    color: var(--primary-white-color);
-  }
-  .socials__icon {
-    fill: currentColor;
-  }
+.socials__icon {
+    @include color-icon(currentColor);
+}
   

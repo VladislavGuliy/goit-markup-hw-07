@@ -5,11 +5,13 @@
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
-  }
-  
-  .logo__item {
+}
+.logo__item {
     color: var(--black-color);
-  }
-  .logo__item--color-white {
-    color: var(--primary-white-color);
-  }
+    
+    &--color-white {
+      color: var(--primary-white-color);
+    }
+
+}
+  
